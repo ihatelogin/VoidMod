@@ -15,13 +15,11 @@ version="1.16.4-1.0.0" #mandatory
 
 displayName="Void Mod" #mandatory
 
-updateJSONURL="http://myurl.me/" #optional
+#updateJSONURL="http://myurl.me/" #optional
 
-displayURL="http://example.com/" #optional
+displayURL="https://github.com/ihatelogin/VoidMod" #optional
 
-logoFile="examplemod.png" #optional
-
-#credits="Thanks for this example mod goes to Java" #optional
+#logoFile="examplemod.png" #optional
 
 authors="ihatelogin" #optional
 

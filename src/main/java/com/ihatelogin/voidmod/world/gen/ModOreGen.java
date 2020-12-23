@@ -27,9 +27,9 @@ public class ModOreGen {
 
     public static void registerOre(){
         endOres.add(register("air_block", Feature.ORE.withConfiguration(new OreFeatureConfig(
-                new BlockMatchRuleTest(Blocks.END_STONE), RegistryHandler.VOID_CRYSTAL_ORE.get().getDefaultState(), 20)) //Vein Size
+                new BlockMatchRuleTest(Blocks.END_STONE), RegistryHandler.VOID_CRYSTAL_ORE.get().getDefaultState(), 5)) //Vein Size
                 .range(128).square() //Spawn height start
-                .func_242731_b(64))); //Chunk spawn frequency
+                .func_242731_b(32))); //Chunk spawn frequency
     }
 
     @SubscribeEvent(priority = EventPriority.HIGHEST)
