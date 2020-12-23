@@ -1,6 +1,7 @@
 package com.ihatelogin.voidmod.util;
 
 import com.ihatelogin.voidmod.VoidMod;
+import com.ihatelogin.voidmod.armor.ModArmorMaterial;
 import com.ihatelogin.voidmod.blocks.BlockItemBase;
 import com.ihatelogin.voidmod.blocks.VoidCrystalBlock;
 import com.ihatelogin.voidmod.blocks.VoidCrystalOre;
@@ -8,11 +9,13 @@ import com.ihatelogin.voidmod.items.ItemBase;
 import com.ihatelogin.voidmod.reference.Reference;
 import com.ihatelogin.voidmod.tools.ModItemTier;
 import net.minecraft.block.Block;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.lwjgl.system.CallbackI;
 
 public class RegistryHandler {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MOD_ID);
@@ -41,4 +44,9 @@ public class RegistryHandler {
     public static final RegistryObject<ShovelItem> VOID_CRYSTAL_SHOVEL = ITEMS.register("void_crystal_shovel", () -> new ShovelItem(ModItemTier.VOID_CRYSTAL, 0, -3.0F, new Item.Properties().group(VoidMod.TAB)));
     public static final RegistryObject<HoeItem> VOID_CRYSTAL_HOE = ITEMS.register("void_crystal_hoe", () -> new HoeItem(ModItemTier.VOID_CRYSTAL, 0, -3.0F, new Item.Properties().group(VoidMod.TAB)));
 
+    //Armor
+    public static final RegistryObject<ArmorItem> VOID_CRYSTAL_HELMET = ITEMS.register("void_crystal_helmet", () -> new ArmorItem(ModArmorMaterial.VOID_CRYSTAL, EquipmentSlotType.HEAD, new Item.Properties().group(VoidMod.TAB)));
+    public static final RegistryObject<ArmorItem> VOID_CRYSTAL_CHESTPLATE = ITEMS.register("void_crystal_chestplate", () -> new ArmorItem(ModArmorMaterial.VOID_CRYSTAL, EquipmentSlotType.CHEST, new Item.Properties().group(VoidMod.TAB)));
+    public static final RegistryObject<ArmorItem> VOID_CRYSTAL_LEGGINGS = ITEMS.register("void_crystal_leggings", () -> new ArmorItem(ModArmorMaterial.VOID_CRYSTAL, EquipmentSlotType.LEGS, new Item.Properties().group(VoidMod.TAB)));
+    public static final RegistryObject<ArmorItem> VOID_CRYSTAL_BOOTS = ITEMS.register("void_crystal_boots", () -> new ArmorItem(ModArmorMaterial.VOID_CRYSTAL, EquipmentSlotType.FEET, new Item.Properties().group(VoidMod.TAB)));
 }

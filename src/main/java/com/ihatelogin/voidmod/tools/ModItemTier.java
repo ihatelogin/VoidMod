@@ -8,8 +8,8 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    VOID_CRYSTAL(3, 2431, 10, 5.0f, 17, () -> {
-        return Ingredient.fromItems(RegistryHandler.VOID_CRYSTAL_SWORD.get());
+    VOID_CRYSTAL(5, 2431, 10, 5.0f, 17, () -> {
+        return Ingredient.fromItems(RegistryHandler.VOID_CRYSTAL.get());
     });
 
     private final int harvestLevel;

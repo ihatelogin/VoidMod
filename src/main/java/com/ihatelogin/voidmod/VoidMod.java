@@ -2,6 +2,7 @@ package com.ihatelogin.voidmod;
 
 import com.ihatelogin.voidmod.reference.Reference;
 import com.ihatelogin.voidmod.util.RegistryHandler;
+import com.ihatelogin.voidmod.world.gen.ModOreGen;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
@@ -41,7 +42,7 @@ public class VoidMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-
+        ModOreGen.registerOre();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

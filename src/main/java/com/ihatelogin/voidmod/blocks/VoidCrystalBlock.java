@@ -12,7 +12,7 @@ public class VoidCrystalBlock extends Block {
         super(Block.Properties.create(Material.IRON)
                 .hardnessAndResistance(17.0f, 133.0f)
                 .sound(SoundType.METAL)
-                .harvestLevel(3)
+                .harvestLevel(4)
                 .harvestTool(ToolType.PICKAXE)
         );
     }

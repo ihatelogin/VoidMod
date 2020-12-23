@@ -7,5 +7,9 @@
   "item.voidmod.void_crystal_axe": "Void Crystal Axe",
   "item.voidmod.void_crystal_shovel": "Void Crystal Shovel",
   "item.voidmod.void_crystal_hoe": "Void Crystal Hoe",
+  "item.voidmod.void_crystal_helmet": "Void Crystal Helmet",
+  "item.voidmod.void_crystal_chestplate": "Void Crystal Chestplate",
+  "item.voidmod.void_crystal_leggings": "Void Crystal Leggings",
+  "item.voidmod.void_crystal_boots": "Void Crystal Boots",
   "itemGroup.voidTab": "Void"
 }
