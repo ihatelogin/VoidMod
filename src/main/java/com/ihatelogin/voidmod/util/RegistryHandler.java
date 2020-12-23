@@ -1,13 +1,14 @@
 package com.ihatelogin.voidmod.util;
 
+import com.ihatelogin.voidmod.VoidMod;
 import com.ihatelogin.voidmod.blocks.BlockItemBase;
 import com.ihatelogin.voidmod.blocks.VoidCrystalBlock;
 import com.ihatelogin.voidmod.blocks.VoidCrystalOre;
 import com.ihatelogin.voidmod.items.ItemBase;
 import com.ihatelogin.voidmod.reference.Reference;
+import com.ihatelogin.voidmod.tools.ModItemTier;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemTier;
+import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +33,12 @@ public class RegistryHandler {
     //Block Items
     public static final RegistryObject<Item> VOID_CRYSTAL_BLOCK_ITEM = ITEMS.register("void_crystal_block", () -> new BlockItemBase(VOID_CRYSTAL_BLOCK.get()));
     public static final RegistryObject<Item> VOID_CRYSTAL_ORE_ITEM = ITEMS.register("void_crystal_ore", () -> new BlockItemBase(VOID_CRYSTAL_ORE.get()));
+
     //Tools
+    public static final RegistryObject<SwordItem> VOID_CRYSTAL_SWORD = ITEMS.register("void_crystal_sword", () -> new SwordItem(ModItemTier.VOID_CRYSTAL, 5, -1.0F, new Item.Properties().group(VoidMod.TAB)));
+    public static final RegistryObject<PickaxeItem> VOID_CRYSTAL_PICKAXE = ITEMS.register("void_crystal_pickaxe", () -> new PickaxeItem(ModItemTier.VOID_CRYSTAL, 0, -3.0F, new Item.Properties().group(VoidMod.TAB)));
+    public static final RegistryObject<AxeItem> VOID_CRYSTAL_AXE = ITEMS.register("void_crystal_axe", () -> new AxeItem(ModItemTier.VOID_CRYSTAL, 6, -1.9F, new Item.Properties().group(VoidMod.TAB)));
+    public static final RegistryObject<ShovelItem> VOID_CRYSTAL_SHOVEL = ITEMS.register("void_crystal_shovel", () -> new ShovelItem(ModItemTier.VOID_CRYSTAL, 0, -3.0F, new Item.Properties().group(VoidMod.TAB)));
+    public static final RegistryObject<HoeItem> VOID_CRYSTAL_HOE = ITEMS.register("void_crystal_hoe", () -> new HoeItem(ModItemTier.VOID_CRYSTAL, 0, -3.0F, new Item.Properties().group(VoidMod.TAB)));
 
 }

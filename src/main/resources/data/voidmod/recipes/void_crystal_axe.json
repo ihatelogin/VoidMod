@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx ",
+    "x| ",
+    " | "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "voidmod:void_crystal"
+    },
+    "|" :
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "voidmod:void_crystal_axe",
+    "count": 1
+  }
+}

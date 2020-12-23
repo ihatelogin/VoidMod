@@ -2,5 +2,10 @@
   "item.voidmod.void_crystal": "Void Crystal",
   "block.voidmod.void_crystal_block": "Void Crystal Block",
   "block.voidmod.void_crystal_ore": "Void Crystal Ore",
+  "item.voidmod.void_crystal_sword": "Void Crystal Sword",
+  "item.voidmod.void_crystal_pickaxe": "Void Crystal Pickaxe",
+  "item.voidmod.void_crystal_axe": "Void Crystal Axe",
+  "item.voidmod.void_crystal_shovel": "Void Crystal Shovel",
+  "item.voidmod.void_crystal_hoe": "Void Crystal Hoe",
   "itemGroup.voidTab": "Void"
 }
