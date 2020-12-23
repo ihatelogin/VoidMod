@@ -2,6 +2,7 @@ package com.ihatelogin.voidmod.util;
 
 import com.ihatelogin.voidmod.blocks.BlockItemBase;
 import com.ihatelogin.voidmod.blocks.VoidCrystalBlock;
+import com.ihatelogin.voidmod.blocks.VoidCrystalOre;
 import com.ihatelogin.voidmod.items.ItemBase;
 import com.ihatelogin.voidmod.reference.Reference;
 import net.minecraft.block.Block;
@@ -26,10 +27,11 @@ public class RegistryHandler {
 
     //Blocks
     public static final RegistryObject<Block> VOID_CRYSTAL_BLOCK = BLOCKS.register("void_crystal_block", VoidCrystalBlock::new);
+    public static final RegistryObject<Block> VOID_CRYSTAL_ORE = BLOCKS.register("void_crystal_ore", VoidCrystalOre::new);
 
     //Block Items
     public static final RegistryObject<Item> VOID_CRYSTAL_BLOCK_ITEM = ITEMS.register("void_crystal_block", () -> new BlockItemBase(VOID_CRYSTAL_BLOCK.get()));
-
+    public static final RegistryObject<Item> VOID_CRYSTAL_ORE_ITEM = ITEMS.register("void_crystal_ore", () -> new BlockItemBase(VOID_CRYSTAL_ORE.get()));
     //Tools
 
 }

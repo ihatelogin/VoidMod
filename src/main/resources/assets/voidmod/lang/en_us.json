@@ -1,5 +1,6 @@
 {
   "item.voidmod.void_crystal": "Void Crystal",
   "block.voidmod.void_crystal_block": "Void Crystal Block",
+  "block.voidmod.void_crystal_ore": "Void Crystal Ore",
   "itemGroup.voidTab": "Void"
 }
