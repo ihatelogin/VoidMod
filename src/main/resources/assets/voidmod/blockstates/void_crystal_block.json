@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "voidmod:block/void_crystal_block" }
+  }
+}
